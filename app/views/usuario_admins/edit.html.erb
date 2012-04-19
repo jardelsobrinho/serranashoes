@@ -1,0 +1,20 @@
+<h1>Editing usuario_admin</h1>
+
+<% form_for(@usuario_admin) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nomeusuario %><br />
+    <%= f.text_field :nomeusuario %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @usuario_admin %> |
+<%= link_to 'Back', usuario_admins_path %>

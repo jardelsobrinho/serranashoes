@@ -1,0 +1,195 @@
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (690.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: INDEX command denied to user 'jardelsobrinho'@'localhost' for table 'schema_migrations': CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategorias (20120419175622)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategorias (20120419175622)
+  [4;36;1mSQL (123.5ms)[0m   [0;1mCREATE TABLE `categorias` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `descricao` varchar(50) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (18.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20120419175622')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSHOW FIELDS FROM `categorias`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `categorias`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `categorias`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#index (for 127.0.0.1 at 2012-04-19 14:58:38) [GET]
+  [4;36;1mCategoria Load (21.5ms)[0m   [0;1mSELECT * FROM `categorias` [0m
+Rendering template within layouts/categorias
+Rendering categorias/index
+Completed in 3652ms (View: 3623, DB: 22) | 200 OK [http://localhost/categorias]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#new (for 127.0.0.1 at 2012-04-19 14:58:47) [GET]
+  [4;35;1mCategoria Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `categorias`[0m
+Rendering template within layouts/categorias
+Rendering categorias/new
+Completed in 27ms (View: 15, DB: 3) | 200 OK [http://localhost/categorias/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#index (for 127.0.0.1 at 2012-04-19 14:58:53) [GET]
+  [4;36;1mCategoria Load (0.0ms)[0m   [0;1mSELECT * FROM `categorias` [0m
+Rendering template within layouts/categorias
+Rendering categorias/index
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/categorias]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#index (for 127.0.0.1 at 2012-04-19 15:00:42) [GET]
+  [4;35;1mCategoria Load (0.5ms)[0m   [0mSELECT * FROM `categorias` [0m
+Rendering template within layouts/admin
+Rendering categorias/index
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/categorias]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#index (for 127.0.0.1 at 2012-04-19 15:02:00) [GET]
+  [4;36;1mCategoria Load (0.5ms)[0m   [0;1mSELECT * FROM `categorias` [0m
+Rendering template within layouts/admin
+Rendering categorias/index
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/categorias]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#index (for 127.0.0.1 at 2012-04-19 15:02:09) [GET]
+  [4;35;1mCategoria Load (0.0ms)[0m   [0mSELECT * FROM `categorias` [0m
+Rendering template within layouts/admin
+Rendering categorias/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/categorias]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#index (for 127.0.0.1 at 2012-04-19 15:02:12) [GET]
+  [4;36;1mCategoria Load (0.5ms)[0m   [0;1mSELECT * FROM `categorias` [0m
+Rendering template within layouts/admin
+Rendering categorias/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/categorias]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#index (for 127.0.0.1 at 2012-04-19 15:02:13) [GET]
+  [4;35;1mCategoria Load (0.0ms)[0m   [0mSELECT * FROM `categorias` [0m
+Rendering template within layouts/admin
+Rendering categorias/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/categorias]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#index (for 127.0.0.1 at 2012-04-19 15:02:20) [GET]
+  [4;36;1mCategoria Load (0.0ms)[0m   [0;1mSELECT * FROM `categorias` [0m
+Rendering template within layouts/admin
+Rendering categorias/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/categorias]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#index (for 127.0.0.1 at 2012-04-19 15:02:24) [GET]
+  [4;35;1mCategoria Load (0.0ms)[0m   [0mSELECT * FROM `categorias` [0m
+Rendering template within layouts/admin
+Rendering categorias/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/categorias]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#index (for 127.0.0.1 at 2012-04-19 15:02:25) [GET]
+  [4;36;1mCategoria Load (0.0ms)[0m   [0;1mSELECT * FROM `categorias` [0m
+Rendering template within layouts/admin
+Rendering categorias/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/categorias]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#index (for 127.0.0.1 at 2012-04-19 15:02:57) [GET]
+  [4;35;1mCategoria Load (6.0ms)[0m   [0mSELECT * FROM `categorias` [0m
+Rendering template within layouts/admin
+Rendering categorias/index
+Completed in 14ms (View: 2, DB: 7) | 200 OK [http://localhost/categorias]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#index (for 127.0.0.1 at 2012-04-19 15:03:12) [GET]
+  [4;36;1mCategoria Load (0.5ms)[0m   [0;1mSELECT * FROM `categorias` [0m
+Rendering template within layouts/loja
+Rendering categorias/index
+Completed in 43ms (View: 8, DB: 1) | 200 OK [http://localhost/categorias]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriasController#index (for 127.0.0.1 at 2012-04-19 15:03:19) [GET]
+  [4;35;1mCategoria Load (0.0ms)[0m   [0mSELECT * FROM `categorias` [0m
+Rendering template within layouts/admin
+Rendering categorias/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/categorias]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginAdminController#create (for 127.0.0.1 at 2012-04-19 15:18:57) [GET]
+Rendering login_admin/create
+Completed in 3610ms (View: 3609, DB: 1) | 200 OK [http://localhost/login_admin/create]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginAdminController#create (for 127.0.0.1 at 2012-04-19 15:20:27) [GET]
+Rendering login_admin/create
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginAdminController#new (for 127.0.0.1 at 2012-04-19 15:21:29) [GET]
+Rendering login_admin/new
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategorias (20120419175622)
+Migrating to CreateUsuarioAdmins (20120419182520)
+  [4;36;1mSQL (97.5ms)[0m   [0;1mCREATE TABLE `usuario_admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nomeusuario` varchar(255), `password` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (24.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20120419182520')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `categorias`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `categorias`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `categorias`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `usuario_admins`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `usuario_admins`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `usuario_admins`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginAdminController#new (for 127.0.0.1 at 2012-04-19 16:39:35) [GET]
+Rendering login_admin/new
+Completed in 3684ms (View: 3683, DB: 1) | 200 OK [http://localhost/]

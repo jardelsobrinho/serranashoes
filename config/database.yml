@@ -1,0 +1,15 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  database: serranashoes
+  username: root
+  password: jonathas
+  host: localhost
+
+production:
+  adapter: mysql
+  encoding: utf8
+  database: serranashoes
+  username: root
+  password: jonathas
+  host: localhost
